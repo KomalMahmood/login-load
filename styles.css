@@ -1,0 +1,131 @@
+*
+{
+	margin:0;
+	padding: 0;
+}
+.main
+{
+	width: 100vw;
+	height: 60vh;
+	position: relative;
+}
+.vid
+{
+	position: relative;
+	width:100vw;
+}
+.form
+{
+	width:380px;
+	height: 380px;
+	/*border:1px solid grey;*/
+	position: absolute;
+	top:0;
+	border-radius: 50%;
+	z-index: -1;
+	transition: all 0.2s ease;
+
+}
+.form img
+{
+	margin-left: 42%;
+	margin-top: 20px;
+}
+.form input:nth-child(1),.form input:nth-child(2)
+{
+	margin-top: 20px;
+	margin-left: 100px;
+	width: 63%;
+	height: 8vh;
+	padding-left: 20px;
+	box-sizing: border-box;
+	font-size: 26px;
+	border:none;
+	outline:none;
+	border-bottom: 2px solid skyblue;
+	background:transparent;
+	color: white;
+
+}
+
+.form input:nth-child(3),.form input:nth-child(4)
+{
+	width:110px;
+	background-color: #1C86EE;
+	color: white;
+	height: 40px;
+	margin-top: 40px;
+	margin-left: 110px;
+	border:none;
+	transition: all 0.5s linear;
+
+}
+.form input:nth-child(4)
+{
+	margin-left: 8px;
+}
+::placeholder
+{
+	color: rgba(255,255,255,0.8);
+
+}
+.form input:nth-child(3):hover,.form input:nth-child(4):hover
+{
+    margin-top: 45px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.form input:nth-child(1):focus,.form input:nth-child(2):focus
+{
+	box-shadow: -2px 2px 2px 3px skyblue;
+	border:none;
+}
+.cover
+{
+	position: relative;
+	top:-700px;
+	left: 35%;
+	width: 400px;
+	height: 400px;
+	background: rgb(2, 30, 86);
+	border-radius: 50%;
+	transition: all 0.2s ease;
+	box-shadow: -10px 10px 30px 20px white;
+
+}
+
+.cover h1
+{
+	position: absolute;
+	top: 37%;
+	left:20%;
+	color: white;
+	font-size: 80px;
+	font-family: 'Cookie', cursive;
+	transition: all 0.2s ease;
+
+}
+.cover:hover
+{
+    background:linear-gradient(to right,skyblue 45%,white 100%);
+    border:2px solid #1C86EE;
+    width: 5rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 50%;
+   border-bottom-left-radius: 50%; 
+
+}
+.cover:hover .form
+{
+	z-index: 2;
+}
+.cover:hover h1
+{
+	transform: rotateZ(-90deg);
+	font-size: 45px;
+	color: rgb(2, 30, 86);
+	margin-top: 30px;
+	margin-left: -30px;
+
+}
